@@ -1,0 +1,244 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar{
+    background: white;
+    height: 65px;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(1, 1, 1, 0.1);
+}
+.navbar h1{
+    font-family: 'Righteous', cursive;
+}
+.nav-menu{
+    display: flex;
+    gap: 30px;
+}
+
+.hero-container{
+    display: flex;
+    height: 470px;
+    padding: 0 10%;
+}
+
+.hero-container > div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-container h1{
+    font-size: 60px;
+    width: 360px;
+    margin: 20px 0;
+}
+
+.hero-container p{
+    font-size: 20px;
+
+}
+
+.hero-container img{
+    width: 50%;
+    height: 323px;
+    align-self: center;
+}
+
+.description-contaier{
+    background: white;
+    height: 243px;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+}
+.description-contaier > div{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px 0px rgb(1,1,1,0.1);
+    border-top: 1px solid rgb(228,228,228);
+    border-radius: 5px;
+    transform: 0.3s;
+}
+
+.description-contaier > div:hover{
+    box-shadow: 0px 4px 8px 0px rgb(1,1,1,0.3);
+    cursor: pointer;
+}
+
+.description-contaier > div > div{
+    width: 570px;
+}
+
+.description-contaier > img{
+    width: 40%;
+}
+
+.description-left-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-container{
+    min-height: 400px;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.content-container .card{
+    height: 100%;
+}
+
+.card{
+    box-shadow: 0px 4px 8px 0px rgb(1,1,1,0.1);
+    border-top: 1px solid rgb(228,228,228);
+    border-radius: 5px;
+    transform: 0.3s;
+    text-align: justify;
+}
+
+.card:hover{
+    box-shadow: 0px 4px 8px 0px rgb(1,1,1,0.3);
+    cursor: pointer;
+}
+
+.card > img {
+  object-fit: fill;
+  height: 240px;
+  width: 100%;
+}
+
+.card > .card-body{
+    padding: 20px;
+}
+
+.card > .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.what-is-container {
+    height: 300px;
+    padding: 0 10%;
+    display: flex;
+    margin: 40px 0;
+  }
+  .what-is-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    background: #dea2e9;
+  }
+  
+  .what-is-container > div > div {
+    width: 400px;
+  }
+  
+  .what-is-container > img {
+    width: 45%;
+  }
+  
+  .what-is-container > div > .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 420px) {
+      .hero-container{
+          flex-wrap: wrap;
+          height: 100%;
+      }
+
+      .hero-container> div{
+          width: 100%;
+          height: 250px;
+      }
+
+      .hero-container > img{
+          width: 100%;
+          height: 100%;
+      }
+
+      .hero-container h1{
+          font-size: 36px;
+          text-align: center;
+          width: 100%;
+      }
+
+      .hero-container p{
+          font-size: 22px;
+          text-align: center;
+      }
+
+      .content-container{
+          grid-template-columns: 1fr;
+      }
+
+      .description-contaier{
+          flex-wrap: wrap;
+          height: 100%;
+      }
+      .description-contaier h1, .description-contaier p{
+          text-align: center;
+      }
+
+      .description-contaier > div{
+          width: 100%;
+          padding: 5%;
+      }
+      .description-contaier >div >div{
+          width: 100%;
+      }
+      .description-contaier > img{
+          width: 100%;
+          height: 200px;
+      }
+      .what-is-container{
+          flex-wrap: wrap;
+          height: 100%;
+          flex-direction: column-reverse;
+      }
+      .what-is-container>div{
+          width: 100%;
+      }
+      .what-is-container>div>div{
+          width: 100%;
+      }
+      .what-is-container h1{
+          text-align: center;
+          width: 100%;
+      }
+      .what-is-container p{
+          text-align: center;
+          width: 100%;
+      }
+      .what-is-container >img{
+          width: 70%;
+          align-self: center;
+      }
+      nav>.nav-menu{
+          display: none;
+      }
+
+      .card img{
+          height: 200px;
+      }
+    }
